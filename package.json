@@ -1,0 +1,19 @@
+{
+  "name": "siedrdaniel",
+  "version": "1.0.0",
+  "description": "Professional Dentist Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "lightbox": "^0.5.0",
+    "lightbox2": "^2.11.3",
+    "simplelightbox": "^2.2.1"
+  }
+}

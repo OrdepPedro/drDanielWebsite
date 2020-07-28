@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;477;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Dr. Daniel Godoi</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header-inner">
+      <!-- Main Nav -->
+      <div class="navbar-inner">
+        <img src="img/logo72ppi.png" alt="My Portfolio" id="logo" />
+        <nav id="main-nav">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Tratamentos</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="#" class="current">Galeria</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Section 1: Sobre -->
+    <section class="container">
+      <div class="grid">
+        <div class="grid-col grid-col--1"></div>
+        <div class="grid-col grid-col--2"></div>
+        <div class="grid-col grid-col--3"></div>
+        <div class="grid-col grid-col--4"></div>
+
+        <div class="grid-item">
+          <a
+            href="https://source.unsplash.com/D0ov97Td-xM/"
+            data-lightbox="cases"
+            data-title="Lorem Ipsum"
+          >
+            <img src="https://source.unsplash.com/D0ov97Td-xM/" alt="" />
+            <div class="overlay"></div>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a
+            href="https://source.unsplash.com/v_2FRXEba94/"
+            data-lightbox="cases"
+            data-title="Lorem Ipsum"
+          >
+            <img src="https://source.unsplash.com/v_2FRXEba94/" alt="" />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a
+            href="https://source.unsplash.com/kpLEaeScdHY/"
+            data-lightbox="cases"
+            data-title="Lorem Ipsum"
+          >
+            <img src="https://source.unsplash.com/kpLEaeScdHY/" alt="" />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a
+            href="https://source.unsplash.com/Gt4CWOnHdEE/"
+            data-lightbox="cases"
+            data-title="Lorem Ipsum"
+          >
+            <img src="https://source.unsplash.com/Gt4CWOnHdEE/" alt="" />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a
+            href="https://source.unsplash.com/By1szZOVpHg/"
+            data-lightbox="cases"
+            data-title="Lorem Ipsum"
+          >
+            <img src="https://source.unsplash.com/By1szZOVpHg/" alt="" />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a
+            href="https://source.unsplash.com/YzyvxfzddzA/"
+            data-lightbox="cases"
+            data-title="Lorem Ipsum"
+          >
+            <img src="https://source.unsplash.com/YzyvxfzddzA/" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer-inner">
+      <div class="brand-display py-1">
+        <img src="img/72ppi/Ativo 1.png" alt="My Portfolio" id="logo" />
+        <p>Consultório Odontológico</p>
+        <h2>Dr. Daniel Godoi</h2>
+        <br />
+        <div>
+          <p>Copyright &copy; 2020 Todos direitos reservados</p>
+          <p>Dr. Daniel Godoi</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="js/lightbox.min.js"></script>
+
+    <script src="https://unpkg.com/colcade@0/colcade.js"></script>
+
+    <script>
+      var lb = $;
+      var colc = new Colcade(".grid", {
+        columns: ".grid-col",
+        items: ".grid-item",
+      });
+    </script>
+  </body>
+</html>

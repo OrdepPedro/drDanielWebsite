@@ -1,0 +1,70 @@
+@import 'config';
+
+.container {
+    max-width: $website-width;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+%btn-shared {
+    display: inline-block;
+    border-radius: 6.25rem;
+    cursor: pointer;    
+    transition: all .2s;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.btn {    
+    &-main {
+        @extend %btn-shared;
+        background-color: $main-color;
+        color: $light-color;
+        margin: 1.5rem;
+        padding: 0.4rem 3.125rem;
+    }
+
+    &-white {
+        @extend %btn-shared;
+        background-color: $light-color;
+        margin: 1.5rem 1.5rem 1.5rem 0;
+        padding: 0.4rem 3.5rem;
+        color: $main-color;
+    }
+
+    &:hover {
+        transform: translateY(-0.1875rem);
+        box-shadow: 0 .625rem 1.25rem rgba(0, 0, 0, .2);
+    }
+
+    &:active {
+        transform: translateY(-0.0625rem);
+        box-shadow: 0 .3125rem .625rem rgba(0, 0, 0, .2);
+    }
+}
+
+// Padding
+.py {
+    &-1 {
+        padding: 1rem 0;
+    }
+    &-2 {
+        padding: 2rem 0;
+    }
+    &-3 {
+        padding: 3rem 0;
+    }
+    &-4 {
+        padding: 4rem 0;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-title {
+    text-align: left;
+    color: #1CAAC3;
+}
