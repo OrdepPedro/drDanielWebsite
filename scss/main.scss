@@ -94,25 +94,28 @@ img {
 #header {
   &-home {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      $bg-img no-repeat center right / cover;
+      $bg-img no-repeat center center / cover;
     height: 95vh;
 
     // Header content
     .header-content {
       text-align: left;
       margin: auto;
-      padding: 11rem 13rem 2rem 2rem;
+      padding: 15rem 13rem 2rem 2rem;
+
+      h5 {
+        position: relative;
+      }
 
       h1 {
         font-size: 4rem;
-        line-height: 1.2;
+        line-height: 1;
       }
-    }
-    .icon {
-      position: absolute;
-      top: 92%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+
+      p {
+        margin: auto;
+        font-size: 0.8;
+      }
     }
   }
 }

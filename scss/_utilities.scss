@@ -28,7 +28,7 @@
   &-white {
     @extend %btn-shared;
     background-color: $light-color;
-    margin: 1.5rem 1.5rem 1.5rem 0;
+    margin: 1.5rem;
     padding: 0.4rem 3.5rem;
     color: $main-color;
   }
@@ -67,11 +67,4 @@
 .section-title {
   text-align: left;
   color: #1caac3;
-}
-
-.page-title {
-  background: linear-gradient(180deg, #00a0bc, #aadfe8);
-  color: $light-color;
-  text-align: center;
-  padding-bottom: 1rem;
 }
