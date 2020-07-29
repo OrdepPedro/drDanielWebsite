@@ -368,6 +368,14 @@ img {
       -moz-box-shadow: 0px 3px 12px -1px #333333;
       box-shadow: 0px 3px 12px -1px #333333; }
 
+.contact-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  color: #333; }
+
 .grid-col--2,
 .grid-col--3 {
   display: none; }

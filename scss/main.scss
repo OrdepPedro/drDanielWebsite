@@ -462,6 +462,17 @@ img {
   }
 }
 
+// Contact Page
+
+.contact-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  color: $dark-color;
+}
+
 .grid-col--2,
 .grid-col--3 {
   display: none;
