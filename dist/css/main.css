@@ -181,8 +181,8 @@ img {
     top: -180px;
     right: 0;
     clip-path: circle(50% at 100% 50%);
-    width: 400px;
-    height: 400px;
+    width: 25rem;
+    height: 25rem;
     background: linear-gradient(360deg, #00a0bc, #aadfe8);
     -webkit-box-shadow: 10px 10px 17px -15px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 17px -15px rgba(0, 0, 0, 0.75);
@@ -209,12 +209,12 @@ img {
       font-weight: 500;
       text-align: center; }
   #home-b .treatiments-img {
-    background: no-repeat center center/cover;
-    z-index: -2; }
+    z-index: -2;
+    position: relative; }
     #home-b .treatiments-img img {
       width: 60%;
       height: auto;
-      margin: 15%; }
+      margin: auto; }
 
 #home-c {
   position: relative;
@@ -396,7 +396,7 @@ img {
     width: 300px;
     height: 300px; }
   #home-a .ball-detail-under {
-    top: 250px;
+    top: 230px;
     left: 165px;
     width: 85px;
     height: 85px; }
@@ -408,7 +408,45 @@ img {
       #home-a .info-content .who-img img {
         width: 50%;
         height: auto;
-        margin: auto; } }
+        margin: auto; }
+  #home-b .ball-detail-top {
+    top: -100px;
+    right: 0;
+    width: 240px;
+    height: 240px;
+    clip-path: circle(50% at 100% 50%); }
+  #home-b .ball-detail-under {
+    top: -10px;
+    right: 210px;
+    width: 75px;
+    height: 75px; }
+  #home-b .treatments-info {
+    display: grid;
+    grid-template-areas: "img img" "treatments treatments"; }
+    #home-b .treatments-info .treatments-img img {
+      width: 60%;
+      height: auto;
+      margin: auto; }
+    #home-b .treatments-info .treatments {
+      grid-area: treatments; }
+    #home-b .treatments-info .treatments-img {
+      grid-area: img; }
+  #home-c .ball-detail-top {
+    top: -120px;
+    left: -100px;
+    width: 250px;
+    height: 250px; }
+  #home-c .gallery-info {
+    margin: 1rem 2rem; }
+  #footer .footer-content {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 1rem; }
+    #footer .footer-content .section-title {
+      text-align: center; } }
 
 @media (min-width: 768px) {
   .grid-col--2 {
