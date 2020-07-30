@@ -539,6 +539,39 @@ img {
     width: 1.6rem;
     transform: rotate(-45deg); } }
 
+@media screen and (max-width: 530px) {
+  #header-home {
+    height: 20rem; }
+  .header-content h5 {
+    padding-top: 1rem; }
+  .header-content .description {
+    display: none; }
+  .header-content .btn {
+    padding: 0;
+    margin: 1rem 0.5rem; }
+    .header-content .btn-main {
+      margin: 1rem;
+      display: none; }
+    .header-content .btn-white {
+      margin: 1rem 1rem 1rem 0; }
+    .header-content .btn:hover {
+      transform: none;
+      box-shadow: none; }
+    .header-content .btn:active {
+      transform: none;
+      box-shadow: none; }
+  .ball-detail-top {
+    display: none; }
+  .ball-detail-under {
+    display: none; }
+  #home-c .gallery-info {
+    margin: auto;
+    padding: 1rem; }
+  #footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem; } }
+
 @media (min-width: 768px) {
   .grid-col--2 {
     display: block; } }

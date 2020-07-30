@@ -255,3 +255,62 @@
     }
   }
 }
+
+@media screen and (max-width: 530px) {
+  #header-home {
+    height: 20rem;
+  }
+  .header-content {
+    h5 {
+      padding-top: 1rem;
+    }
+    .description {
+      display: none;
+    }
+    .btn {
+      padding: 0;
+      margin: 1rem 0.5rem;
+
+      &-main {
+        margin: 1rem;
+        display: none;
+      }
+
+      &-white {
+        margin: 1rem 1rem 1rem 0;
+      }
+
+      &:hover {
+        transform: none;
+        box-shadow: none;
+      }
+      &:active {
+        transform: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .ball-detail {
+    &-top {
+      display: none;
+    }
+    &-under {
+      display: none;
+    }
+  }
+
+  #home-c {
+    .gallery-info {
+      margin: auto;
+      padding: 1rem;
+    }
+  }
+  #footer {
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      font-size: 1rem;
+    }
+  }
+}
