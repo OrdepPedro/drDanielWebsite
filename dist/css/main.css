@@ -269,10 +269,14 @@ img {
   background-color: rgba(0, 0, 0, 0.75);
   padding: 0.8rem 2.4rem;
   width: 100%;
-  height: 50px;
+  height: 4rem;
   top: 0;
   transition: 0.5s;
   z-index: 3; }
+  .navbar-inner .nav-checkbox {
+    display: none; }
+  .navbar-inner .nav-button {
+    display: none; }
   .navbar-inner ul {
     display: flex; }
   .navbar-inner li {
@@ -295,7 +299,8 @@ img {
 #about-page {
   position: relative;
   color: #333;
-  font-size: 0.8rem; }
+  font-size: 0.8rem;
+  padding-top: 3rem; }
   #about-page .ball-detail-top-inner {
     z-index: 2;
     position: absolute;
@@ -455,9 +460,9 @@ img {
       text-align: center; } }
 
 @media screen and (max-width: 768px) {
-  .navbar .nav-checkbox {
+  .navbar .nav-checkbox, .navbar-inner .nav-checkbox {
     display: none; }
-  .navbar .nav-button {
+  .navbar .nav-button, .navbar-inner .nav-button {
     display: inline-block;
     background-color: #fff;
     height: 3rem;
@@ -472,7 +477,7 @@ img {
     -webkit-box-shadow: 6px 4px 28px -7px #333333;
     -moz-box-shadow: 6px 4px 28px -7px #333333;
     box-shadow: 6px 4px 28px -7px #333333; }
-  .navbar .nav-bg {
+  .navbar .nav-bg, .navbar-inner .nav-bg {
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
@@ -482,7 +487,7 @@ img {
     background-image: radial-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
     transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
     z-index: 1000; }
-  .navbar #main-nav {
+  .navbar #main-nav, .navbar-inner #main-nav {
     height: 100vh;
     position: fixed;
     top: 0;
@@ -491,7 +496,7 @@ img {
     opacity: 0;
     width: 0;
     transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6); }
-  .navbar ul {
+  .navbar ul, .navbar-inner ul {
     position: absolute;
     text-align: center;
     margin: auto;
@@ -500,42 +505,42 @@ img {
     transform: translate(-50%, -50%);
     flex-direction: column;
     width: 100%; }
-    .navbar ul li:last-child {
+    .navbar ul li:last-child, .navbar-inner ul li:last-child {
       padding: 16px 24px; }
-  .navbar a {
+  .navbar a, .navbar-inner a {
     font-size: 1rem; }
-  .navbar .nav-checkbox:checked ~ .nav-bg {
+  .navbar .nav-checkbox:checked ~ .nav-bg, .navbar-inner .nav-checkbox:checked ~ .nav-bg {
     transform: scale(80); }
-  .navbar .nav-checkbox:checked ~ #main-nav {
+  .navbar .nav-checkbox:checked ~ #main-nav, .navbar-inner .nav-checkbox:checked ~ #main-nav {
     opacity: 1;
     width: 100%; }
-  .navbar .nav-icon {
+  .navbar .nav-icon, .navbar-inner .nav-icon {
     position: relative;
     margin-top: 1.53rem; }
-    .navbar .nav-icon, .navbar .nav-icon::before, .navbar .nav-icon::after {
+    .navbar .nav-icon, .navbar-inner .nav-icon, .navbar .nav-icon::before, .navbar-inner .nav-icon::before, .navbar .nav-icon::after, .navbar-inner .nav-icon::after {
       height: 2px;
       background-color: #333;
       display: inline-block; }
-    .navbar .nav-icon::before, .navbar .nav-icon::after {
+    .navbar .nav-icon::before, .navbar-inner .nav-icon::before, .navbar .nav-icon::after, .navbar-inner .nav-icon::after {
       content: "";
       position: absolute;
       right: 0;
       transition: all 0.2s; }
-    .navbar .nav-icon {
+    .navbar .nav-icon, .navbar-inner .nav-icon {
       width: 1.3rem; }
-    .navbar .nav-icon::before {
+    .navbar .nav-icon::before, .navbar-inner .nav-icon::before {
       width: 1.6rem;
       top: -0.5rem; }
-    .navbar .nav-icon::after {
+    .navbar .nav-icon::after, .navbar-inner .nav-icon::after {
       width: 0.6rem;
       top: 0.5rem; }
-  .navbar .nav-checkbox:checked + .nav-button .nav-icon {
+  .navbar .nav-checkbox:checked + .nav-button .nav-icon, .navbar-inner .nav-checkbox:checked + .nav-button .nav-icon {
     background-color: transparent; }
-  .navbar .nav-checkbox:checked + .nav-button .nav-icon::before {
+  .navbar .nav-checkbox:checked + .nav-button .nav-icon::before, .navbar-inner .nav-checkbox:checked + .nav-button .nav-icon::before {
     top: 0;
     right: -0.145rem;
     transform: rotate(45deg); }
-  .navbar .nav-checkbox:checked + .nav-button .nav-icon::after {
+  .navbar .nav-checkbox:checked + .nav-button .nav-icon::after, .navbar-inner .nav-checkbox:checked + .nav-button .nav-icon::after {
     top: 0;
     right: -0.145rem;
     width: 1.6rem;
@@ -547,7 +552,16 @@ img {
       display: none; }
   #about-page .philo-content {
     display: grid;
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .contact-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin: 8rem auto; }
+    .contact-page .section-title {
+      text-align: center; }
+    .contact-page .contact-us {
+      padding: 4rem; } }
 
 @media screen and (max-width: 530px) {
   #header-home {
@@ -580,7 +594,11 @@ img {
   #footer .footer-content {
     display: flex;
     flex-direction: column;
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .ball-detail-top-inner {
+    display: none; }
+  .ball-detail-under-inner {
+    display: none; } }
 
 @media (min-width: 768px) {
   .grid-col--2 {

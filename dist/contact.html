@@ -24,6 +24,11 @@
       <!-- Main Nav -->
       <div class="navbar-inner">
         <img src="img/logo72ppi.png" alt="My Portfolio" id="logo" />
+        <input type="checkbox" class="nav-checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="nav-button">
+          <span class="nav-icon">&nbsp;</span>
+        </label>
+        <div class="nav-bg"></div>
         <nav id="main-nav">
           <ul>
             <li><a href="index.html">Início</a></li>
@@ -44,9 +49,9 @@
           <li>68795-000</li>
           <li>Benevides</li>
           <br />
-          <li>Fone: (91)98725-4427</li>
+          <li><a href="#" class="phone">Fone: (91)98725-4427</a></li>
           <br />
-          <li>Fone: (91)3724-3769</li>
+          <li><a href="#" class="phone">Fone: (91)3724-3769</a></li>
           <a href="#" class="btn btn-main btn-animated">Fale Conosco</a>
         </div>
         <div class="opening-hours">
@@ -80,5 +85,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/call.js"></script>
   </body>
 </html>

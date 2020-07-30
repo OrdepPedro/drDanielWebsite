@@ -131,7 +131,7 @@
 
 // Tablet and small
 @media screen and (max-width: 768px) {
-  .navbar {
+  %navbar-shared {
     .nav-checkbox {
       display: none;
     }
@@ -254,6 +254,12 @@
       transform: rotate(-45deg);
     }
   }
+  .navbar {
+    @extend %navbar-shared;
+    &-inner {
+      @extend %navbar-shared;
+    }
+  }
 
   // About page
   #about-page {
@@ -267,6 +273,20 @@
     .philo-content {
       display: grid;
       grid-template-columns: 1fr;
+    }
+  }
+
+  // Contact Page
+  .contact-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin: 8rem auto;
+    .section-title {
+      text-align: center;
+    }
+    .contact-us {
+      padding: 4rem;
     }
   }
 }
@@ -326,6 +346,16 @@
       display: flex;
       flex-direction: column;
       font-size: 1rem;
+    }
+  }
+
+  // About page
+  .ball-detail {
+    &-top-inner {
+      display: none;
+    }
+    &-under-inner {
+      display: none;
     }
   }
 }
