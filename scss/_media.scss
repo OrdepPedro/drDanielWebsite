@@ -129,13 +129,61 @@
 }
 
 // Smartphone
-@media (max-width: 630px) {
+@media screen and (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-  li {
-    padding: 1rem;
-    font-size: 0.7rem;
+    .nav-checkbox {
+      display: none;
+    }
+
+    .nav-button {
+      background-color: #fff;
+      height: 4rem;
+      width: 4rem;
+      position: fixed;
+      top: 0.5rem;
+      right: 0.5rem;
+      border-radius: 50%;
+      z-index: 2000;
+    }
+
+    .nav-bg {
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background-image: radial-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.75)
+      );
+      transform: scale(50);
+    }
+
+    #main-nav {
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 1500;
+    }
+
+    ul {
+      position: absolute;
+      text-align: center;
+      margin: auto;
+      top: 20%;
+      left: 42%;
+      transform: translate(-20%, 20%);
+      flex-direction: column;
+
+      li:last-child {
+        padding: 16px 24px;
+      }
+    }
+    a {
+      font-size: 1rem;
+    }
   }
 }

@@ -47,6 +47,13 @@ img {
 
 // Nav
 .navbar {
+  .nav-checkbox {
+    display: none;
+  }
+  .nav-button {
+    display: none;
+  }
+
   position: fixed;
   display: flex;
   align-items: center;
