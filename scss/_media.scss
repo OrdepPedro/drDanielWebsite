@@ -129,7 +129,7 @@
   }
 }
 
-// Smartphone
+// Tablet and small
 @media screen and (max-width: 768px) {
   .navbar {
     .nav-checkbox {
@@ -252,6 +252,21 @@
       right: -0.145rem;
       width: 1.6rem;
       transform: rotate(-45deg);
+    }
+  }
+
+  // About page
+  #about-page {
+    .info-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      .who-img {
+        display: none;
+      }
+    }
+    .philo-content {
+      display: grid;
+      grid-template-columns: 1fr;
     }
   }
 }

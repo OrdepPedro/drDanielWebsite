@@ -300,6 +300,11 @@ img {
         color: $dark-color;
       }
     }
+    .contact-us {
+      a:visited {
+        color: $dark-color;
+      }
+    }
   }
   .brand-display {
     background: linear-gradient(180deg, #00a0bc, #aadfe8);

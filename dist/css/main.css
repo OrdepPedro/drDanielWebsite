@@ -252,6 +252,8 @@ img {
     font-weight: 500; }
     #footer .footer-content .footer-navigation a {
       color: #333; }
+    #footer .footer-content .contact-us a:visited {
+      color: #333; }
   #footer .brand-display {
     background: linear-gradient(180deg, #00a0bc, #aadfe8);
     color: #f4f4f4;
@@ -537,7 +539,15 @@ img {
     top: 0;
     right: -0.145rem;
     width: 1.6rem;
-    transform: rotate(-45deg); } }
+    transform: rotate(-45deg); }
+  #about-page .info-content {
+    display: grid;
+    grid-template-columns: 1fr; }
+    #about-page .info-content .who-img {
+      display: none; }
+  #about-page .philo-content {
+    display: grid;
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 530px) {
   #header-home {
