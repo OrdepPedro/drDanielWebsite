@@ -1,17 +1,19 @@
 // Mobile calls var
-const phones = document.querySelectorAll(".phone");
+const phone1 = document.querySelector(".phone1");
+const phone2 = document.querySelector(".phone2");
 // Check width var
 const screen = window.screen.width;
 
 // Phone method on mobile
+
 if (screen < 768) {
-  phones.forEach((e) => {
-    e.setAttribute("href", "tel:+55(91)98725-4427");
-    e.style.color = "#333";
-  });
+  phone1.setAttribute("href", "tel:(91)98725-4427");
+  phone2.setAttribute("href", "tel:(91)3724-3769");
+  phone1.style.color = "#333";
+  phone2.style.color = "#333";
 } else {
-  phones.forEach((e) => {
-    e.removeAttribute("href");
-    e.style.color = "#333";
-  });
+  phone1.removeAttribute("href");
+  phone2.removeAttribute("href");
+  phone1.style.color = "#333";
+  phone2.style.color = "#333";
 }
