@@ -125,6 +125,14 @@
       .section-title {
         text-align: center;
       }
+
+      .map {
+        width: auto;
+        .google-map {
+          width: auto;
+          align-self: center;
+        }
+      }
     }
   }
 }
@@ -281,12 +289,12 @@
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
-    margin: 8rem auto;
+    margin: 10rem auto;
+    .btn {
+      margin: 1rem auto;
+    }
     .section-title {
       text-align: center;
-    }
-    .contact-us {
-      padding: 4rem;
     }
   }
 }

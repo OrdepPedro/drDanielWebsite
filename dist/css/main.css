@@ -168,9 +168,9 @@ img {
       background: no-repeat top center/cover;
       z-index: -2; }
       #home-a .info-content .who-img img {
-        width: 60%;
+        width: 75%;
         height: auto;
-        margin: 15%; }
+        margin: 10%; }
     #home-a .info-content .about-text {
       padding: 0 1rem;
       font-size: 0.8rem;
@@ -212,10 +212,10 @@ img {
       font-size: 0.8rem;
       font-weight: 500;
       text-align: center; }
-  #home-b .treatiments-img {
+  #home-b .treatments-img {
     z-index: -2;
     position: relative; }
-    #home-b .treatiments-img img {
+    #home-b .treatments-img img {
       width: 60%;
       height: auto;
       margin: auto; }
@@ -265,7 +265,7 @@ img {
         box-shadow: 8px 8px 15px -6px #333333; }
       #footer .footer-content .map .btn {
         margin: 1rem auto;
-        left: 28%; }
+        align-content: center; }
   #footer .brand-display {
     background: linear-gradient(180deg, #00a0bc, #aadfe8);
     color: #f4f4f4;
@@ -392,6 +392,12 @@ img {
   align-content: center;
   height: 100vh;
   color: #333; }
+  .contact-page .btn {
+    margin-left: 0; }
+  .contact-page .map .google-map {
+    -webkit-box-shadow: 8px 8px 15px -6px #333333;
+    -moz-box-shadow: 8px 8px 15px -6px #333333;
+    box-shadow: 8px 8px 15px -6px #333333; }
 
 .grid-col--2,
 .grid-col--3 {
@@ -469,7 +475,12 @@ img {
     font-size: 0.8rem;
     padding: 1rem; }
     #footer .footer-content .section-title {
-      text-align: center; } }
+      text-align: center; }
+    #footer .footer-content .map {
+      width: auto; }
+      #footer .footer-content .map .google-map {
+        width: auto;
+        align-self: center; } }
 
 @media screen and (max-width: 768px) {
   .navbar .nav-checkbox, .navbar-inner .nav-checkbox {
@@ -569,11 +580,11 @@ img {
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
-    margin: 8rem auto; }
+    margin: 10rem auto; }
+    .contact-page .btn {
+      margin: 1rem auto; }
     .contact-page .section-title {
-      text-align: center; }
-    .contact-page .contact-us {
-      padding: 4rem; } }
+      text-align: center; } }
 
 @media screen and (max-width: 530px) {
   #header-home {
