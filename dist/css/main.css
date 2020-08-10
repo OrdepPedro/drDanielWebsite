@@ -383,6 +383,8 @@ img {
         width: 60%;
         height: auto;
         margin: 15%; }
+    #about-page .info-content .about-text {
+      margin: auto; }
   #about-page .philo-content {
     display: grid;
     grid-template-columns: 1fr 1fr; }
@@ -393,6 +395,8 @@ img {
         width: 60%;
         height: auto;
         margin: 1rem; }
+  #about-page .about-text {
+    margin: auto; }
 
 #footer-inner {
   font-size: 0.7rem;
