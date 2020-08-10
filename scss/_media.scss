@@ -366,4 +366,26 @@
       display: none;
     }
   }
+
+  // Treatments Page
+  .treatment {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid $dark-color 2px;
+    img {
+      align-self: center;
+      width: 80%;
+      height: auto;
+    }
+    &-2 {
+      display: flex;
+      flex-direction: column;
+      border-bottom: solid $dark-color 2px;
+      img {
+        align-self: center;
+        width: 80%;
+        height: auto;
+      }
+    }
+  }
 }

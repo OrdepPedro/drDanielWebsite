@@ -85,7 +85,6 @@
   .showmore a {
     cursor: pointer;
     color: #00A0BC;
-    display: block;
     font-weight: 600; }
 
 * {
@@ -658,7 +657,23 @@ img {
   .ball-detail-top-inner {
     display: none; }
   .ball-detail-under-inner {
-    display: none; } }
+    display: none; }
+  .treatment {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid #333 2px; }
+    .treatment img {
+      align-self: center;
+      width: 80%;
+      height: auto; }
+    .treatment-2 {
+      display: flex;
+      flex-direction: column;
+      border-bottom: solid #333 2px; }
+      .treatment-2 img {
+        align-self: center;
+        width: 80%;
+        height: auto; } }
 
 @media (min-width: 768px) {
   .grid-col--2 {
