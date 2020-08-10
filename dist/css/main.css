@@ -51,6 +51,43 @@
   text-align: left;
   color: #1caac3; }
 
+.treatment {
+  margin: 2.5rem;
+  display: flex;
+  color: #333; }
+  .treatment img {
+    width: 20%;
+    height: auto; }
+  .treatment-description {
+    padding: 1rem;
+    margin: auto; }
+  .treatment-2 {
+    margin: 2.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    color: #333;
+    text-align: right; }
+    .treatment-2 h2 {
+      text-align: right; }
+    .treatment-2 img {
+      width: 20%;
+      height: auto;
+      justify-content: flex-end; }
+
+.showmore {
+  transition: all 0.3s ease-in-out; }
+  .showmore .more {
+    display: none; }
+  .showmore.show .dots {
+    display: none; }
+  .showmore.show .more {
+    display: inline; }
+  .showmore a {
+    cursor: pointer;
+    color: #00A0BC;
+    display: block;
+    font-weight: 600; }
+
 * {
   margin: 0;
   padding: 0;

@@ -32,3 +32,15 @@ function clickHandler(e) {
 
   e.preventDefault();
 }
+
+// Read more
+function expand() {
+  document.querySelectorAll(".showmore").forEach(function (p) {
+    p.querySelector("a").addEventListener("mousedown", function () {
+      p.classList.toggle("show");
+      this.textContent = p.classList.contains("show")
+        ? "Ler menos"
+        : "Ler mais";
+    });
+  });
+}

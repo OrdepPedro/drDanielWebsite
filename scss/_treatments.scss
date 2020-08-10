@@ -1,0 +1,54 @@
+.treatment {
+  margin: 2.5rem;
+  display: flex;
+  color: $dark-color;
+
+  img {
+    width: 20%;
+    height: auto;
+  }
+
+  &-description {
+    padding: 1rem;
+    margin: auto;
+  }
+
+  &-2 {
+    margin: 2.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    color: $dark-color;
+    text-align: right;
+
+    h2 {
+      text-align: right;
+    }
+
+    img {
+      width: 20%;
+      height: auto;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.showmore {
+  transition: all 0.3s ease-in-out;
+  .more {
+    display: none;
+  }
+  &.show {
+    .dots {
+      display: none;
+    }
+    .more {
+      display: inline;
+    }
+  }
+  a {
+    cursor: pointer;
+    color: $main-color;
+    display: block;
+    font-weight: 600;
+  }
+}

@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="css/main.css" />
 
-    <title>Dr. Daniel Godoi | Galeria</title>
+    <title>Dr. Daniel Godoi | Tratamentos</title>
   </head>
   <body>
     <!-- Header -->
@@ -29,17 +29,64 @@
         <nav id="main-nav">
           <ul>
             <li><a href="index.html">Início</a></li>
-            <li><a href="#">Tratamentos</a></li>
+            <li><a href="#" class="current">Tratamentos</a></li>
             <li><a href="about.html">Sobre</a></li>
-            <li><a href="#" class="current">Galeria</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="gallery.html">Galeria</a></li>
+            <li><a href="contact.html">Contato</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <!-- Section 1: Sobre -->
+    <!-- Section 1: Treatments -->
     <section class="container treatments py-2">
-      <div class="treatment-left py-1"></div>
+      <div class="treatment">
+        <img src="./img/image9.jpeg" alt="" />
+
+        <div class="treatment-description">
+          <h2 class="section-title">Tratamento</h2>
+          <p class="showmore">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
+            nemo inventore nobis ex minima, officia at facere perspiciatis
+            sapiente exercitationem. Quae repellat nobis, aliquam consequuntur
+            numquam eveniet deserunt vitae natus! fugit explicabo<span
+              class="dots"
+              >...</span
+            ><span class="more"
+              >repellat quibusdam itaque soluta veritatis iusto eaque dolor
+              ea?</span
+            >
+            <a onclick="expand()">Ler mais</a>
+          </p>
+          <p class="showmore">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
+            fugit explicabo<span class="dots">...</span
+            ><span class="more"
+              >repellat quibusdam itaque soluta veritatis iusto eaque dolor
+              ea?</span
+            >
+            <a onclick="expand()">Ler mais</a>
+          </p>
+        </div>
+      </div>
+      <div class="treatment-2">
+        <img src="./img/image9.jpeg" alt="" />
+        <div class="treatment-description">
+          <h2 class="section-title">Tratamento</h2>
+          <p class="showmore">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
+            nemo inventore nobis ex minima, officia at facere perspiciatis
+            sapiente exercitationem. Quae repellat nobis, aliquam consequuntur
+            numquam eveniet deserunt vitae natus! fugit explicabo<span
+              class="dots"
+              >...</span
+            ><span class="more"
+              >repellat quibusdam itaque soluta veritatis iusto eaque dolor
+              ea?</span
+            >
+            <a onclick="expand()">Ler mais</a>
+          </p>
+        </div>
+      </div>
     </section>
     <!-- Footer -->
     <footer id="footer-inner">
@@ -54,5 +101,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/app.js"></script>
   </body>
 </html>
