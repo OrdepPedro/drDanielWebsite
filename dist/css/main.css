@@ -347,7 +347,7 @@ img {
 #about-page {
   position: relative;
   color: #333;
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding-top: 3rem; }
   #about-page .ball-detail-top-inner {
     z-index: 2;
