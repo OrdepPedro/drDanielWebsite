@@ -135,6 +135,29 @@
       }
     }
   }
+  // Treatments Page
+  .treatment {
+    &-description {
+      padding: 2rem 0 2rem 2rem;
+      margin: auto;
+      &-2 {
+        padding: 2rem 2rem 2rem 0;
+        margin: auto;
+      }
+    }
+    img {
+      align-self: center;
+      width: 80%;
+      height: auto;
+    }
+    &-2 {
+      img {
+        align-self: center;
+        width: 80%;
+        height: auto;
+      }
+    }
+  }
 }
 
 // Tablet and small

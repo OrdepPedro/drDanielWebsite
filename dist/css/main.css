@@ -54,23 +54,33 @@
 .treatment {
   margin: 2.5rem;
   display: flex;
-  color: #333; }
+  color: #333;
+  text-align: right; }
+  .treatment .section-title {
+    text-align: right; }
   .treatment img {
-    width: 20%;
+    width: 100%;
+    max-width: 300px;
     height: auto; }
   .treatment-description {
-    padding: 1rem;
+    padding: 1rem 0 1rem 10rem;
     margin: auto; }
+    .treatment-description-2 {
+      padding: 1rem 10rem 1rem 0;
+      margin: auto; }
   .treatment-2 {
     margin: 2.5rem;
     display: flex;
     flex-direction: row-reverse;
     color: #333;
-    text-align: right; }
+    text-align: left; }
+    .treatment-2 .section-title {
+      text-align: left; }
     .treatment-2 h2 {
       text-align: right; }
     .treatment-2 img {
-      width: 20%;
+      width: 100%;
+      max-width: 300px;
       height: auto;
       justify-content: flex-end; }
 
@@ -520,7 +530,21 @@ img {
       width: auto; }
       #footer .footer-content .map .google-map {
         width: auto;
-        align-self: center; } }
+        align-self: center; }
+  .treatment-description {
+    padding: 2rem 0 2rem 2rem;
+    margin: auto; }
+    .treatment-description-2 {
+      padding: 2rem 2rem 2rem 0;
+      margin: auto; }
+  .treatment img {
+    align-self: center;
+    width: 80%;
+    height: auto; }
+  .treatment-2 img {
+    align-self: center;
+    width: 80%;
+    height: auto; } }
 
 @media screen and (max-width: 768px) {
   .navbar .nav-checkbox, .navbar-inner .nav-checkbox {
