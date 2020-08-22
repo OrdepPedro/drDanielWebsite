@@ -453,6 +453,14 @@ img {
 .grid-col--3 {
   display: none; }
 
+@media screen and (max-width: 1080px) {
+  #header-home {
+    height: 40%; }
+  #home-a .info-content .who-img {
+    margin: auto; }
+  #home-b .treatments-info .treatments-img {
+    margin: auto; } }
+
 @media (max-width: 854px) {
   #header-home {
     height: 25rem; }
@@ -544,7 +552,14 @@ img {
   .treatment-2 img {
     align-self: center;
     width: 80%;
-    height: auto; } }
+    height: auto; }
+  .contact-page {
+    margin: 4rem auto 2rem;
+    font-size: 0.8rem; }
+    .contact-page .section-title {
+      font-size: 1rem; }
+    .contact-page .btn {
+      font-size: 0.8rem; } }
 
 @media screen and (max-width: 768px) {
   .navbar .nav-checkbox, .navbar-inner .nav-checkbox {
@@ -642,13 +657,16 @@ img {
     grid-template-columns: 1fr; }
   .contact-page {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     text-align: center;
-    margin: 10rem auto; }
+    margin: 12rem auto 8rem; }
     .contact-page .btn {
+      font-size: 0.8rem;
+      padding: 0.6rem 1.4rem;
       margin: 1rem auto; }
     .contact-page .section-title {
-      text-align: center; } }
+      text-align: center;
+      font-size: 1.4rem; } }
 
 @media screen and (max-width: 530px) {
   #header-home {
@@ -689,7 +707,16 @@ img {
   .treatment {
     display: flex;
     flex-direction: column;
-    border-bottom: solid #333 2px; }
+    border-bottom: solid #333 2px;
+    text-align: center; }
+    .treatment-description {
+      padding: 1rem;
+      margin: auto; }
+      .treatment-description-2 {
+        padding: 1rem;
+        margin: auto; }
+    .treatment .section-title {
+      text-align: center; }
     .treatment img {
       align-self: center;
       width: 80%;
@@ -697,11 +724,26 @@ img {
     .treatment-2 {
       display: flex;
       flex-direction: column;
-      border-bottom: solid #333 2px; }
+      border-bottom: solid #333 2px;
+      text-align: center; }
+      .treatment-2 .section-title {
+        text-align: center; }
       .treatment-2 img {
         align-self: center;
         width: 80%;
-        height: auto; } }
+        height: auto; }
+  .contact-page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 8rem auto 5rem; }
+    .contact-page .btn {
+      font-size: 0.8rem;
+      padding: 0.6rem 1.4rem;
+      margin: 1rem auto; }
+    .contact-page .section-title {
+      text-align: center;
+      font-size: 1.4rem; } }
 
 @media (min-width: 768px) {
   .grid-col--2 {
