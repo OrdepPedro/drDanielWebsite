@@ -1,22 +1,38 @@
-@media screen and (max-width: 1080px) {
+@media (min-width: 1080px) {
   #header-home {
-    height: 40%;
+    height: 30%;
   }
-  #home-a {
-    .info-content {
+  #home {
+    &-a {
       .who-img {
         margin: auto;
       }
     }
-  }
-  #home-b {
-    .treatments-info {
+    &-b {
       .treatments-img {
         margin: auto;
       }
     }
   }
 }
+@media (max-width: 1080px) {
+  #header-home {
+    height: 40%;
+  }
+  #home {
+    &-a {
+      .who-img {
+        margin: auto;
+      }
+    }
+    &-b {
+      .treatments-img {
+        margin: auto;
+      }
+    }
+  }
+}
+
 // Tablets and smaller
 @media (max-width: 854px) {
   #header-home {

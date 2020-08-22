@@ -453,12 +453,20 @@ img {
 .grid-col--3 {
   display: none; }
 
-@media screen and (max-width: 1080px) {
+@media (min-width: 1080px) {
+  #header-home {
+    height: 30%; }
+  #home-a .who-img {
+    margin: auto; }
+  #home-b .treatments-img {
+    margin: auto; } }
+
+@media (max-width: 1080px) {
   #header-home {
     height: 40%; }
-  #home-a .info-content .who-img {
+  #home-a .who-img {
     margin: auto; }
-  #home-b .treatments-info .treatments-img {
+  #home-b .treatments-img {
     margin: auto; } }
 
 @media (max-width: 854px) {
