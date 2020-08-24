@@ -1,16 +1,55 @@
-@media (min-width: 1080px) {
-  #header-home {
-    height: 30%;
+@media (min-width: 1600px) {
+  .container {
+    max-width: $website-width-2;
   }
+
+  #logo {
+    width: 65px;
+    height: auto;
+    margin-bottom: none;
+  }
+
+  .navbar {
+    font-size: 1.4rem;
+  }
+
+  #header-home {
+    .header-content {
+      padding: 33rem 31rem 2rem 4rem;
+
+      h5 {
+        font-size: 1.5rem;
+      }
+      h1 {
+        font-size: 4.4rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
   #home {
     &-a {
-      .who-img {
-        margin: auto;
+      .info-content {
+        .who-img {
+          margin: auto;
+        }
+        .about-text {
+          margin: auto;
+          font-size: 1rem;
+        }
       }
     }
     &-b {
-      .treatments-img {
-        margin: auto;
+      .treatments-info {
+        .treatments-img {
+          margin: auto;
+        }
+        .treatments {
+          margin: auto;
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -19,6 +58,7 @@
   #header-home {
     height: 40%;
   }
+
   #home {
     &-a {
       .who-img {

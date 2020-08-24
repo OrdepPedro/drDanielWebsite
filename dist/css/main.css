@@ -13,7 +13,7 @@
   position: relative; }
 
 .btn-main {
-  background-color: #00A0BC;
+  background-color: #00a0bc;
   color: #f4f4f4;
   margin: 1.5rem;
   padding: 0.4rem 3.125rem; }
@@ -22,7 +22,7 @@
   background-color: #f4f4f4;
   margin: 1.5rem;
   padding: 0.4rem 3.5rem;
-  color: #00A0BC; }
+  color: #00a0bc; }
 
 .btn:hover {
   transform: translateY(-0.1875rem);
@@ -94,7 +94,7 @@
     display: inline; }
   .showmore a {
     cursor: pointer;
-    color: #00A0BC;
+    color: #00a0bc;
     font-weight: 600; }
 
 * {
@@ -160,9 +160,9 @@ img {
     color: #f4f4f4;
     transition: border-color 0.5s; }
     .navbar a:hover {
-      border-color: #1CAAC3; }
+      border-color: #1caac3; }
     .navbar a.current {
-      border-color: #00A0BC; }
+      border-color: #00a0bc; }
 
 #header-home {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://source.unsplash.com/U1gvhqVQ2kQ") no-repeat center center/cover;
@@ -178,7 +178,7 @@ img {
       line-height: 1; }
     #header-home .header-content p {
       margin: auto;
-      font-size: 0.8; }
+      font-size: 1rem; }
 
 #home-a {
   position: relative; }
@@ -350,9 +350,9 @@ img {
     color: #f4f4f4;
     transition: border-color 0.5s; }
     .navbar-inner a:hover {
-      border-color: #1CAAC3; }
+      border-color: #1caac3; }
     .navbar-inner a.current {
-      border-color: #00A0BC; }
+      border-color: #00a0bc; }
 
 #about-page {
   position: relative;
@@ -412,7 +412,7 @@ img {
   font-size: 0.7rem;
   color: #333; }
   #footer-inner .brand-display {
-    color: #00A0BC;
+    color: #00a0bc;
     text-align: center; }
     #footer-inner .brand-display div p {
       color: #333; }
@@ -453,13 +453,33 @@ img {
 .grid-col--3 {
   display: none; }
 
-@media (min-width: 1080px) {
-  #header-home {
-    height: 30%; }
-  #home-a .who-img {
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1920px; }
+  #logo {
+    width: 65px;
+    height: auto;
+    margin-bottom: none; }
+  .navbar {
+    font-size: 1.4rem; }
+  #header-home .header-content {
+    padding: 33rem 31rem 2rem 4rem; }
+    #header-home .header-content h5 {
+      font-size: 1.5rem; }
+    #header-home .header-content h1 {
+      font-size: 4.4rem; }
+    #header-home .header-content p {
+      font-size: 1.4rem; }
+  #home-a .info-content .who-img {
     margin: auto; }
-  #home-b .treatments-img {
-    margin: auto; } }
+  #home-a .info-content .about-text {
+    margin: auto;
+    font-size: 1rem; }
+  #home-b .treatments-info .treatments-img {
+    margin: auto; }
+  #home-b .treatments-info .treatments {
+    margin: auto;
+    font-size: 1rem; } }
 
 @media (max-width: 1080px) {
   #header-home {
