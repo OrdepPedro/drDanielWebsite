@@ -24,11 +24,11 @@
   padding: 0.4rem 3.5rem;
   color: #00a0bc; }
 
-.btn:hover {
+.btn-animated:hover {
   transform: translateY(-0.1875rem);
   box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2); }
 
-.btn:active {
+.btn-animated:active {
   transform: translateY(-0.0625rem);
   box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.2); }
 
@@ -150,6 +150,8 @@ img {
     display: flex; }
   .navbar li {
     padding: 1rem 1.5rem; }
+    .navbar li a:hover {
+      border-color: #1caac3; }
     .navbar li:last-child {
       padding-right: 0; }
   .navbar a {
@@ -159,8 +161,6 @@ img {
     padding-bottom: 0.5rem;
     color: #f4f4f4;
     transition: border-color 0.5s; }
-    .navbar a:hover {
-      border-color: #1caac3; }
     .navbar a.current {
       border-color: #00a0bc; }
 
@@ -182,6 +182,8 @@ img {
 
 #home-a {
   position: relative; }
+  #home-a .section-title {
+    text-align: center; }
   #home-a .ball-detail-top {
     z-index: -1;
     position: absolute;
@@ -211,14 +213,14 @@ img {
     grid-template-columns: 1fr 1fr;
     color: #333; }
     #home-a .info-content .who-img {
-      background: no-repeat top center/cover;
       z-index: -2; }
-      #home-a .info-content .who-img img {
-        width: 75%;
-        height: auto;
-        margin: 10%; }
+      #home-a .info-content .who-img > img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%; }
     #home-a .info-content .about-text {
       padding: 0 1rem;
+      margin: auto 0;
       font-size: 0.8rem;
       font-weight: 500;
       text-align: center; }
@@ -265,6 +267,66 @@ img {
       width: 60%;
       height: auto;
       margin: auto; }
+
+#home-b2 {
+  background-color: #f4f4f4; }
+  #home-b2 .section-title {
+    text-align: center; }
+  #home-b2 .items-container {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    #home-b2 .items-container .item {
+      color: #333;
+      padding-right: 1rem; }
+      #home-b2 .items-container .item-header {
+        margin-bottom: 0.5rem;
+        display: flex; }
+        #home-b2 .items-container .item-header svg {
+          fill: #00a0bc;
+          width: 40px;
+          height: auto;
+          margin-right: 0.6rem; }
+        #home-b2 .items-container .item-header h4 {
+          margin: auto 0; }
+
+.comments {
+  margin: 1rem auto;
+  padding-bottom: 4rem; }
+  .comments .section-title {
+    text-align: center; }
+  .comments-area {
+    color: #333;
+    display: flex;
+    margin: 2rem 0; }
+  .comments-item {
+    margin-right: 2rem;
+    background-color: #ddd;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    border-bottom-right-radius: 0;
+    -webkit-box-shadow: 0px 0px 15px -5px #333333;
+    -moz-box-shadow: 0px 0px 15px -5px #333333;
+    box-shadow: 0px 0px 15px -5px #333333; }
+    .comments-item-header {
+      margin-bottom: 0.4rem; }
+      .comments-item-header-info {
+        display: flex; }
+        .comments-item-header-info i {
+          margin: auto 0;
+          padding-right: 0.4rem; }
+      .comments-item-header-stars {
+        color: #fb8c00; }
+    .comments-item:last-child {
+      margin-right: 0; }
+  .comments-link {
+    position: relative; }
+    .comments-link a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
 
 #home-c {
   position: relative;
@@ -721,6 +783,26 @@ img {
     display: none; }
   .ball-detail-under {
     display: none; }
+  #home-b2 .items-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    #home-b2 .items-container .item {
+      margin: 1rem auto;
+      text-align: center; }
+      #home-b2 .items-container .item-header {
+        justify-content: center; }
+  .comments-area {
+    display: flex;
+    flex-direction: column; }
+  .comments-item {
+    margin: 1rem; }
+    .comments-item:last-child {
+      margin-right: 1rem; }
+  .comments-link .btn {
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 1rem auto; }
   #home-c .gallery-info {
     margin: auto;
     padding: 1rem; }
