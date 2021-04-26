@@ -276,10 +276,10 @@ img {
     padding: 0.5rem;
     margin-bottom: 1rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem; }
     #home-b2 .items-container .item {
-      color: #333;
-      padding-right: 1rem; }
+      color: #333; }
       #home-b2 .items-container .item-header {
         margin-bottom: 0.5rem;
         display: flex; }
@@ -299,13 +299,15 @@ img {
   .comments-area {
     color: #333;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin: 2rem 0; }
   .comments-item {
+    flex: 1 1 0;
     margin-right: 2rem;
     background-color: #ddd;
     padding: 2rem;
     border-radius: 1.5rem;
-    border-bottom-right-radius: 0;
     -webkit-box-shadow: 0px 0px 15px -5px #333333;
     -moz-box-shadow: 0px 0px 15px -5px #333333;
     box-shadow: 0px 0px 15px -5px #333333; }
@@ -356,15 +358,16 @@ img {
   color: #333; }
   #footer .footer-content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     font-weight: 500; }
     #footer .footer-content .footer-navigation a {
       color: #333; }
     #footer .footer-content .contact-us a:visited {
       color: #333; }
     #footer .footer-content .map {
-      width: 450px;
-      height: auto; }
+      width: max-content;
+      height: auto;
+      text-align: center; }
       #footer .footer-content .map .google-map {
         width: 400px;
         height: auto;
@@ -608,6 +611,14 @@ img {
       grid-area: treatments; }
     #home-b .treatments-info .treatments-img {
       grid-area: img; }
+  .comments-area {
+    flex-direction: column;
+    justify-content: space-between; }
+  .comments-item {
+    flex: none;
+    margin-bottom: 2rem; }
+    .comments-item:last-child {
+      margin-right: 2rem; }
   #home-c .ball-detail-top {
     top: -120px;
     left: -100px;
