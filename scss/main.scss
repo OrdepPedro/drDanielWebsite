@@ -349,8 +349,6 @@ img {
 // Home-c Gallery
 #home-c {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
-    url("../img/IMG_3637.jpeg") no-repeat center right / cover;
 
   .ball-detail {
     &-top {
@@ -369,10 +367,28 @@ img {
   }
 
   .gallery-info {
-    margin: 5rem 6rem 4rem 6rem;
-    padding: 0 6rem;
-    font-size: 0.9rem;
-    color: $light-color;
+    font-size: 1rem;
+    color: $dark-color;
+
+    &-flex {
+      display: flex;
+      flex-direction: row;
+
+      &-info {
+        flex: 1 1 0;
+        padding: 0 1rem;
+        margin: auto 0;
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      &-img {
+        object-fit: cover;
+        max-height: 100%;
+        width: 50%;
+      }
+    }
 
     .section-title-gallery {
       color: #00a0bc;
@@ -393,6 +409,11 @@ img {
     .footer-navigation {
       a {
         color: $dark-color;
+
+        &:hover {
+          font-weight: 700;
+          transition: all 0.3s ease-in-out;
+        }
       }
     }
     .contact-us {

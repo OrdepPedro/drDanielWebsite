@@ -331,8 +331,7 @@ img {
       transform: translate(-50%, -50%); }
 
 #home-c {
-  position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../img/IMG_3637.jpeg") no-repeat center right/cover; }
+  position: relative; }
   #home-c .ball-detail-top {
     z-index: 1;
     position: absolute;
@@ -346,10 +345,22 @@ img {
     -moz-box-shadow: 10px 10px 17px -15px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 17px -15px rgba(0, 0, 0, 0.75); }
   #home-c .gallery-info {
-    margin: 5rem 6rem 4rem 6rem;
-    padding: 0 6rem;
-    font-size: 0.9rem;
-    color: #f4f4f4; }
+    font-size: 1rem;
+    color: #333; }
+    #home-c .gallery-info-flex {
+      display: flex;
+      flex-direction: row; }
+      #home-c .gallery-info-flex-info {
+        flex: 1 1 0;
+        padding: 0 1rem;
+        margin: auto 0;
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: center; }
+      #home-c .gallery-info-flex-img {
+        object-fit: cover;
+        max-height: 100%;
+        width: 50%; }
     #home-c .gallery-info .section-title-gallery {
       color: #00a0bc; }
 
@@ -362,6 +373,9 @@ img {
     font-weight: 500; }
     #footer .footer-content .footer-navigation a {
       color: #333; }
+      #footer .footer-content .footer-navigation a:hover {
+        font-weight: 700;
+        transition: all 0.3s ease-in-out; }
     #footer .footer-content .contact-us a:visited {
       color: #333; }
     #footer .footer-content .map {
@@ -624,8 +638,6 @@ img {
     left: -100px;
     width: 250px;
     height: 250px; }
-  #home-c .gallery-info {
-    margin: 1rem 2rem; }
   #footer .footer-content {
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -815,8 +827,12 @@ img {
     text-align: center;
     margin: 1rem auto; }
   #home-c .gallery-info {
-    margin: auto;
-    padding: 1rem; }
+    font-size: 0.9rem; }
+    #home-c .gallery-info-flex {
+      flex-direction: column;
+      justify-content: center; }
+      #home-c .gallery-info-flex-img {
+        display: none; }
   #footer .footer-content {
     display: flex;
     flex-direction: column;
