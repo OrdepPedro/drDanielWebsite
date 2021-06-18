@@ -51,52 +51,6 @@
   text-align: left;
   color: #1caac3; }
 
-.treatment {
-  margin: 2.5rem;
-  display: flex;
-  color: #333;
-  text-align: right; }
-  .treatment .section-title {
-    text-align: right; }
-  .treatment img {
-    width: 100%;
-    max-width: 300px;
-    height: auto; }
-  .treatment-description {
-    padding: 1rem 0 1rem 10rem;
-    margin: auto; }
-    .treatment-description-2 {
-      padding: 1rem 10rem 1rem 0;
-      margin: auto; }
-  .treatment-2 {
-    margin: 2.5rem;
-    display: flex;
-    flex-direction: row-reverse;
-    color: #333;
-    text-align: left; }
-    .treatment-2 .section-title {
-      text-align: left; }
-    .treatment-2 h2 {
-      text-align: right; }
-    .treatment-2 img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      justify-content: flex-end; }
-
-.showmore {
-  transition: all 0.3s ease-in-out; }
-  .showmore .more {
-    display: none; }
-  .showmore.show .dots {
-    display: none; }
-  .showmore.show .more {
-    display: inline; }
-  .showmore a {
-    cursor: pointer;
-    color: #00a0bc;
-    font-weight: 600; }
-
 * {
   margin: 0;
   padding: 0;
@@ -277,7 +231,7 @@ img {
     margin-bottom: 1rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem; }
+    grid-gap: 3rem; }
     #home-b2 .items-container .item {
       color: #333; }
       #home-b2 .items-container .item-header {
@@ -347,20 +301,31 @@ img {
   #home-c .gallery-info {
     font-size: 1rem;
     color: #333; }
-    #home-c .gallery-info-flex {
-      display: flex;
-      flex-direction: row; }
-      #home-c .gallery-info-flex-info {
-        flex: 1 1 0;
-        padding: 0 1rem;
+    #home-c .gallery-info-content {
+      position: relative; }
+      #home-c .gallery-info-content-img {
+        position: relative; }
+        #home-c .gallery-info-content-img img {
+          height: 300px;
+          width: 100%;
+          object-fit: cover;
+          object-position: 10% 80%; }
+        #home-c .gallery-info-content-img-overlay {
+          position: absolute;
+          background-color: #00000070;
+          width: 100%;
+          height: 97%;
+          top: 0; }
+      #home-c .gallery-info-content-text {
+        position: absolute;
         margin: auto 0;
         font-size: 1rem;
         font-weight: 500;
-        text-align: center; }
-      #home-c .gallery-info-flex-img {
-        object-fit: cover;
-        max-height: 100%;
-        width: 50%; }
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff; }
     #home-c .gallery-info .section-title-gallery {
       color: #00a0bc; }
 
@@ -625,6 +590,9 @@ img {
       grid-area: treatments; }
     #home-b .treatments-info .treatments-img {
       grid-area: img; }
+  #home-b2 .treatments-info .items-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
   .comments-area {
     flex-direction: column;
     justify-content: space-between; }

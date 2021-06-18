@@ -172,6 +172,15 @@
         "img img"
         "treatments treatments";
     }
+
+    &2 {
+      .treatments-info {
+        .items-container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
   }
 
   // Comments section
