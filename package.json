@@ -14,6 +14,6 @@
   "dependencies": {
     "lightbox": "^0.5.0",
     "lightbox2": "^2.11.3",
-    "simplelightbox": "^2.2.1"
+    "simplelightbox": "^2.8.0"
   }
 }
